@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Bayesian Modeling — Workshop, Gießen</title>
+<meta name="description" content="A two-day hands-on Bayesian modeling workshop for early-career researchers, Gießen. Taught by Julius M. Pfadt and Henrik R. Godmann.">
+<meta property="og:title" content="Introduction to Bayesian Modeling">
+<meta property="og:description" content="A two-day hands-on workshop for early-career researchers. Gießen.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf7;
+    --surface:#ffffff;
+    --surface-2:#f4f2ed;
+    --ink:#1c1b19;
+    --ink-2:#4a4740;
+    --ink-3:#7a766c;
+    --line:#e3e0d8;
+    --accent:#8a3d1e;
+    --accent-soft:#f3e6df;
+    --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -12px rgba(28,27,25,.18);
+    --serif:"Newsreader", Iowan Old Style, Palatino, Georgia, serif;
+    --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141412;
+      --surface:#1d1c1a;
+      --surface-2:#232220;
+      --ink:#f0eee9;
+      --ink-2:#c2bdb2;
+      --ink-3:#8d887d;
+      --line:#312f2b;
+      --accent:#e08b5f;
+      --accent-soft:#33231b;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--sans); font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:0 24px}
+  a{color:var(--accent); text-underline-offset:2px}
+  a:hover{text-decoration-thickness:2px}
+
+  /* ---------- header ---------- */
+  header.hero{
+    padding:88px 0 56px;
+    border-bottom:1px solid var(--line);
+    background:
+      radial-gradient(1000px 400px at 15% -10%, var(--accent-soft), transparent 65%);
+  }
+  .eyebrow{
+    font-size:13px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin:0 0 18px;
+  }
+  h1{
+    font-family:var(--serif); font-weight:500;
+    font-size:clamp(2.3rem, 6vw, 3.6rem); line-height:1.08;
+    letter-spacing:-.02em; margin:0 0 14px;
+  }
+  .lede{
+    font-family:var(--serif); font-size:clamp(1.1rem,2.5vw,1.35rem);
+    color:var(--ink-2); font-style:italic; margin:0 0 30px; max-width:36em;
+  }
+  .facts{
+    display:flex; flex-wrap:wrap; gap:8px 10px; list-style:none; padding:0; margin:0 0 34px;
+    font-size:14px;
+  }
+  .facts li{
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:999px; padding:5px 14px; color:var(--ink-2);
+  }
+  .btns{display:flex; flex-wrap:wrap; gap:12px}
+  .btn{
+    display:inline-block; padding:11px 20px; border-radius:8px;
+    font-size:15px; font-weight:500; text-decoration:none;
+    border:1px solid var(--line); background:var(--surface); color:var(--ink);
+    box-shadow:var(--shadow); transition:transform .12s ease;
+  }
+  .btn:hover{transform:translateY(-1px)}
+  .btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+  @media (prefers-color-scheme: dark){ .btn.primary{color:#1a1108} }
+
+  /* ---------- sections ---------- */
+  section{padding:60px 0; border-bottom:1px solid var(--line)}
+  h2{
+    font-family:var(--serif); font-weight:500; font-size:1.9rem;
+    letter-spacing:-.015em; margin:0 0 6px;
+  }
+  .sub{color:var(--ink-3); font-size:15px; margin:0 0 30px}
+  h3{font-size:1.05rem; font-weight:600; margin:0 0 8px}
+
+  /* ---------- callout ---------- */
+  .callout{
+    background:var(--surface); border:1px solid var(--line);
+    border-left:3px solid var(--accent);
+    border-radius:6px; padding:22px 26px; box-shadow:var(--shadow);
+  }
+  .callout h3{margin-top:0}
+  .callout p:last-child{margin-bottom:0}
+
+  /* ---------- schedule ---------- */
+  .day{margin-bottom:44px}
+  .day:last-child{margin-bottom:0}
+  .day-head{
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+    padding-bottom:12px; margin-bottom:4px; border-bottom:2px solid var(--ink);
+  }
+  .day-head h3{
+    font-family:var(--serif); font-size:1.45rem; font-weight:500; margin:0;
+  }
+  .day-head .when{font-size:14px; color:var(--ink-3); margin-left:auto}
+  .row{
+    display:grid; grid-template-columns:76px 1fr 92px;
+    gap:16px; padding:14px 0; border-bottom:1px solid var(--line);
+    align-items:baseline;
+  }
+  .row:last-child{border-bottom:none}
+  .row.break{color:var(--ink-3); font-style:italic}
+  .time{
+    font-variant-numeric:tabular-nums; font-size:14px;
+    color:var(--ink-3); font-weight:500;
+  }
+  .what{font-size:16px}
+  .what .detail{display:block; font-size:14px; color:var(--ink-3); margin-top:2px}
+  .who{
+    font-size:12.5px; text-align:right; color:var(--ink-3);
+    letter-spacing:.03em;
+  }
+  @media (max-width:640px){
+    .row{grid-template-columns:64px 1fr; gap:12px}
+    .who{grid-column:2; text-align:left; margin-top:-8px}
+  }
+
+  /* ---------- cards ---------- */
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px}
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:20px 22px; box-shadow:var(--shadow); text-decoration:none; color:inherit;
+    display:block; transition:transform .12s ease, border-color .12s ease;
+  }
+  a.card:hover{transform:translateY(-2px); border-color:var(--accent)}
+  .card p{margin:6px 0 0; font-size:14.5px; color:var(--ink-2)}
+  .card .tag{
+    font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--accent); font-weight:600;
+  }
+
+  /* ---------- people ---------- */
+  .people{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px}
+  .person{
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:10px; padding:24px; box-shadow:var(--shadow);
+  }
+  .person h3{font-family:var(--serif); font-size:1.25rem; font-weight:500; margin:0 0 2px}
+  .person .role{font-size:13.5px; color:var(--ink-3); margin:0 0 12px}
+  .person p{font-size:14.5px; color:var(--ink-2); margin:0 0 14px}
+  .person .links{display:flex; gap:14px; font-size:14px}
+
+  /* ---------- software ---------- */
+  ul.plain{list-style:none; padding:0; margin:0}
+  ul.plain li{
+    padding:12px 0; border-bottom:1px solid var(--line);
+    display:grid; grid-template-columns:150px 1fr; gap:16px; font-size:15px;
+  }
+  ul.plain li:last-child{border-bottom:none}
+  ul.plain .name{font-weight:600}
+  ul.plain .desc{color:var(--ink-2)}
+  @media (max-width:560px){ ul.plain li{grid-template-columns:1fr; gap:2px} }
+
+  footer{padding:44px 0 64px; font-size:14px; color:var(--ink-3)}
+  footer p{margin:0 0 8px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Workshop · Gießen</p>
+    <h1>Introduction to<br>Bayesian Modeling</h1>
+    <p class="lede">A two-day, hands-on workshop for early-career researchers — from Bayes' theorem to hierarchical models, mostly by doing.</p>
+    <ul class="facts">
+      <li>Two days</li>
+      <li>Taught in English</li>
+      <li>JASP &amp; R</li>
+      <li>No prior Bayesian experience needed</li>
+    </ul>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/setup/README.md">Setup guide — start here</a>
+      <a class="btn" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/archive/refs/heads/main.zip">Download all materials</a>
+      <a class="btn" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop">GitHub repository</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="callout">
+      <h3>Two things to do before day 1</h3>
+      <p><strong>1. Install the software.</strong> JASP for both days, plus R, RStudio and <code>brms</code> for day 2. The <a href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/setup/README.md">setup guide</a> walks you through it and includes a script that checks whether everything works. Please do this in advance — we cannot troubleshoot installations during the sessions.</p>
+      <p><strong>2. Bring a dataset of your own</strong>, ideally one you have already analysed with frequentist methods. On day 2 you will re-analyse it the Bayesian way. <a href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/bring-your-own-data/README.md">What to bring →</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <h2>Schedule</h2>
+    <p class="sub">Times are indicative; we adapt to the room.</p>
+
+    <div class="day">
+      <div class="day-head">
+        <h3>Day 1 — From Bayes' theorem to real analyses</h3>
+        <span class="when">All hands-on work in JASP</span>
+      </div>
+
+      <div class="row"><span class="time">10:00</span><span class="what">Introduction &amp; peer exchange<span class="detail">Who we are, who you are, and what you have heard about Bayes</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="time">10:30</span><span class="what">Bayesian basics<span class="detail">The learning cycle · probability · Bayes' theorem</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="time">10:45</span><span class="what">Bayesian estimation<span class="detail">Theory, then the beta-binomial in JASP</span></span><span class="who">Julius</span></div>
+      <div class="row break"><span class="time">11:15</span><span class="what">Break</span><span class="who"></span></div>
+      <div class="row"><span class="time">11:30</span><span class="what">Bayesian testing<span class="detail">Theory, then the beta-binomial in JASP</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="time">12:00</span><span class="what">Why bother? The benefits<span class="detail">What a <em>p</em>-value cannot do · evidence of absence vs. absence of evidence · credible vs. confidence intervals</span></span><span class="who">Julius</span></div>
+      <div class="row break"><span class="time">12:20</span><span class="what">Lunch</span><span class="who"></span></div>
+      <div class="row"><span class="time">13:05</span><span class="what">JASP with real data I — correlation</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="time">13:35</span><span class="what">JASP with real data II — A/B test &amp; <em>t</em>-test</span><span class="who">Henrik</span></div>
+      <div class="row break"><span class="time">14:05</span><span class="what">Break</span><span class="who"></span></div>
+      <div class="row"><span class="time">14:20</span><span class="what">JASP with real data III — two proportions</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="time">14:50</span><span class="what">JASP AI</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="time">15:10</span><span class="what">Further reading</span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="time">15:25</span><span class="what">Discussion, feedback, outlook to day 2</span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row break"><span class="time">16:00</span><span class="what">End</span><span class="who"></span></div>
+    </div>
+
+    <div class="day">
+      <div class="day-head">
+        <h3>Day 2 — Multi-model inference &amp; hierarchical models</h3>
+        <span class="when">Morning in JASP · afternoon in R</span>
+      </div>
+
+      <div class="row"><span class="time">10:00</span><span class="what">Bayesian multi-model inference<span class="detail">Theory · linear regression and ANOVA, hands-on in JASP</span></span><span class="who">Henrik</span></div>
+      <div class="row break"><span class="time">11:15</span><span class="what">Break</span><span class="who"></span></div>
+      <div class="row"><span class="time">11:30</span><span class="what">Mixed-effects regression in R with <code>brms</code><span class="detail">Theory · prior predictive · posterior predictive · implementation</span></span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row break"><span class="time">13:30</span><span class="what">Lunch</span><span class="who"></span></div>
+      <div class="row"><span class="time">14:00</span><span class="what">How to report a Bayesian analysis</span><span class="who">Julius</span></div>
+      <div class="row"><span class="time">14:20</span><span class="what">Your data, your analysis<span class="detail">Redo your last frequentist analysis the Bayesian way</span></span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="time">15:20</span><span class="what">Beyond the workshop<span class="detail">Simulation-based calibration · Stan, bridgesampling, blavaan, bsts, RoBMA · further reading</span></span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="time">15:40</span><span class="what">Discussion &amp; close</span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row break"><span class="time">16:00</span><span class="what">End</span><span class="who"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="materials">
+  <div class="wrap">
+    <h2>Materials</h2>
+    <p class="sub">Slides go up shortly before each session. Everything is yours to keep and reuse.</p>
+    <div class="grid">
+      <a class="card" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/setup/README.md">
+        <span class="tag">Before you arrive</span>
+        <h3>Setup guide</h3>
+        <p>JASP, R, RStudio and the Stan toolchain, plus a script that verifies your install.</p>
+      </a>
+      <a class="card" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/tree/main/day-1">
+        <span class="tag">Day 1</span>
+        <h3>Slides, JASP files &amp; data</h3>
+        <p>Estimation, testing, and three worked analyses on real datasets.</p>
+      </a>
+      <a class="card" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/tree/main/day-2">
+        <span class="tag">Day 2</span>
+        <h3>Slides, JASP files, R &amp; data</h3>
+        <p>Multi-model inference in JASP, mixed-effects models in <code>brms</code>.</p>
+      </a>
+      <a class="card" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/bring-your-own-data/worksheet.md">
+        <span class="tag">Day 2 session</span>
+        <h3>Bring-your-own-data worksheet</h3>
+        <p>Six steps from your old <em>p</em>-value to a Bayes factor you can defend.</p>
+      </a>
+      <a class="card" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/resources/reporting-checklist.md">
+        <span class="tag">Take away</span>
+        <h3>Reporting checklist</h3>
+        <p>What belongs in the manuscript — priors, diagnostics, Bayes factors, robustness.</p>
+      </a>
+      <a class="card" href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/blob/main/resources/further-reading.md">
+        <span class="tag">Take away</span>
+        <h3>Further reading</h3>
+        <p>A curated list: two papers to start with, then textbooks and topic-by-topic.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="instructors">
+  <div class="wrap">
+    <h2>Instructors</h2>
+    <p class="sub">Both at the Psychological Methods group, University of Amsterdam.</p>
+    <div class="people">
+      <div class="person">
+        <h3>Julius M. Pfadt</h3>
+        <p class="role">University of Amsterdam · former DFG Walter-Benjamin fellow</p>
+        <p>Works on Bayesian statistical modeling — psychometrics, reliability estimation, and structural equation modeling. Develops tools for JASP and the R package <code>Bayesrel</code>, and co-founded JASP Services B.V.</p>
+        <div class="links"><a href="https://juliuspfadt.com">juliuspfadt.com</a></div>
+      </div>
+      <div class="person">
+        <h3>Henrik R. Godmann</h3>
+        <p class="role">PhD candidate, University of Amsterdam</p>
+        <p>Works on robust Bayesian inference, interrupted and non-linear time series, state-space models, and statistical software for applied researchers. Contributes to JASP and co-founded JASP Services B.V.</p>
+        <div class="links">
+          <a href="https://hrgodmann.github.io">hrgodmann.github.io</a>
+          <a href="https://github.com/hrgodmann">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="software">
+  <div class="wrap">
+    <h2>Software</h2>
+    <p class="sub">All free and open source. Install before day 1.</p>
+    <ul class="plain">
+      <li><span class="name"><a href="https://jasp-stats.org">JASP</a></span><span class="desc">Point-and-click Bayesian statistics. Most of the workshop happens here — no coding required.</span></li>
+      <li><span class="name"><a href="https://cran.r-project.org">R</a> &amp; <a href="https://posit.co/download/rstudio-desktop/">RStudio</a></span><span class="desc">Needed for the day 2 afternoon session.</span></li>
+      <li><span class="name"><a href="https://paulbuerkner.com/brms/">brms</a> &amp; <a href="https://mc-stan.org">Stan</a></span><span class="desc">Hierarchical and mixed-effects models. The install takes a while — do it early.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Materials released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — reuse them in your own teaching, with attribution.</p>
+    <p>Questions? Open an <a href="https://github.com/hrgodmann/BayesianStatisticsWorkshop/issues">issue</a>, or just ask us in the room.</p>
+    <p>© 2026 Julius M. Pfadt &amp; Henrik R. Godmann</p>
+  </div>
+</footer>
+
+</body>
+</html>

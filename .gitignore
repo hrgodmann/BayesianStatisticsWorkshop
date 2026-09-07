@@ -1,0 +1,48 @@
+# --- R -----------------------------------------------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+*_cache/
+*_files/
+renv/library/
+renv/staging/
+
+# --- Stan / brms -------------------------------------------------------
+*.rds
+*.o
+*.so
+*.dll
+*_model_binary*
+
+# --- JASP --------------------------------------------------------------
+# Keep .jasp files (they are the teaching material), drop autosaves
+*.jasp.autosave
+~$*
+
+# --- Rendered output ---------------------------------------------------
+*.html
+!docs/index.html
+*.knit.md
+*.utf8.md
+
+# --- OS / editor -------------------------------------------------------
+.DS_Store
+Thumbs.db
+.Trashes
+._*
+.vscode/
+.idea/
+*.swp
+
+# --- LaTeX / Beamer build artefacts ------------------------------------
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
