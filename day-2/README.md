@@ -14,7 +14,7 @@ run the installation check.
 
 ### 1 · Bayesian multi-model inference — 75 min · Henrik
 
-- Theory: why one model is rarely enough; model averaging and inclusion Bayes factors
+- Theory: Model averaging and inclusion Bayes factors
 - **Hands-on:** linear regression in JASP
 - **Hands-on:** ANOVA in JASP
 

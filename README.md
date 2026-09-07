@@ -2,12 +2,12 @@
 
 ### A Hands-on Workshop for Early-Career Researchers
 
-**Gießen, Germany · <!-- TODO: dates -->TBC** · Two days · Taught in English
+**Gießen, Germany · 17 + 18.09.2026**
 
 Everything you need for the workshop lives in this repository: slides, JASP
 files, datasets, worksheets, and the reading list. Nothing here requires a
 GitHub account — use the green **Code → Download ZIP** button if you would
-rather have the whole thing as a folder.
+rather have the whole thing as a folder. For a more accessible overview, visit:
 
 📄 **Workshop website:** <https://hrgodmann.github.io/BayesianStatisticsWorkshop/>
 
@@ -15,8 +15,7 @@ rather have the whole thing as a folder.
 
 ## Before you arrive
 
-Please install the software **before day 1** — we will not have time to
-troubleshoot installations during the sessions.
+Please install the software **before day 1** — as sometimes troubleshoot installation takes a while. If you have any questions, don't hesitate to send us a mail up front.
 
 ➡️ **[setup/README.md](setup/README.md)** — step-by-step install guide for JASP,
 R, RStudio and the Stan toolchain, plus a script that checks whether

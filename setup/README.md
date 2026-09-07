@@ -1,8 +1,7 @@
 # Software setup
 
 **Please work through this before day 1.** It takes 20–40 minutes, most of
-which is unattended downloading. We will not be able to fix installations
-during the sessions.
+which is unattended downloading.
 
 You need two things: **JASP** (used on both days) and **R + RStudio + brms**
 (used on day 2 afternoon).
