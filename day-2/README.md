@@ -29,7 +29,7 @@ Guide: [`../bring-your-own-data/`](../bring-your-own-data/README.md)
 
 ### 5 · Beyond the workshop · Julius & Henrik
 
-### 6 · Discussion & close · Julius & Henrik
+### 6 · Conclusions · Julius & Henrik
 
 ---
 

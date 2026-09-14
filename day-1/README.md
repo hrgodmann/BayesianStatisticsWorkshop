@@ -31,9 +31,9 @@ Three analyses, three real datasets. Follow along on your own machine.
 
 ### 7 · JASP AI · Henrik
 
-### 8 · Further reading · Julius & Henrik
+### 8 · Conclusions · Julius & Henrik
 
-### 9 · Discussion, feedback, outlook to day 2 · Julius & Henrik
+Further reading, discussion, feedback, and outlook to day 2.
 
 ---
 

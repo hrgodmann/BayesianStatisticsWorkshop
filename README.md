@@ -41,8 +41,7 @@ JASP; no coding required.
 | **JASP with real data II** — A/B test & *t*-test | Henrik |
 | **JASP with real data III** — two proportions | Henrik |
 | **JASP AI** | Henrik |
-| **Further reading** | Julius & Henrik |
-| **Discussion, feedback, outlook to day 2** | Julius & Henrik |
+| **Conclusions** — further reading, discussion, feedback, outlook to day 2 | Julius & Henrik |
 
 Sessions run in this order, with breaks and lunch along the way.
 
@@ -61,7 +60,7 @@ From one model to many, then into R for mixed-effects models with `brms`.
 | **How to conduct and report a Bayesian analysis** | Julius |
 | **Your data, your analysis** — redo your last frequentist analysis | Julius & Henrik |
 | **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | Julius & Henrik |
-| **Discussion & close** | Julius & Henrik |
+| **Conclusions** | Julius & Henrik |
 
 Sessions run in this order, with breaks and lunch along the way.
 
