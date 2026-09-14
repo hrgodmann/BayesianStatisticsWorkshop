@@ -23,7 +23,6 @@ renv/staging/
 
 # --- Rendered output ---------------------------------------------------
 *.html
-!docs/index.html
 *.knit.md
 *.utf8.md
 
