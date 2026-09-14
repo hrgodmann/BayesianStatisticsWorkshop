@@ -36,7 +36,7 @@ JASP; no coding required.
 | **Bayesian basics** — learning cycle, probability, Bayes' theorem | Julius |
 | **Bayesian estimation** — theory + beta-binomial in JASP | Julius |
 | **Bayesian testing** — theory + beta-binomial in JASP | Julius |
-| **Why bother?** — the benefits of going Bayesian | Julius |
+| **Bayesian benefits** — the benefits of going Bayesian | Julius |
 | **JASP with real data I** — correlation | Henrik |
 | **JASP with real data II** — A/B test & *t*-test | Henrik |
 | **JASP with real data III** — two proportions | Henrik |

@@ -17,7 +17,7 @@ installed, see [`../setup/`](../setup/README.md).
 
 ### 4 · Bayesian testing · Julius
 
-### 5 · Why bother? The benefits · Julius
+### 5 · Bayesian benefits · Julius
 
 ### 6 · JASP with real data · Henrik
 
