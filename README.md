@@ -7,15 +7,13 @@
 Everything you need for the workshop lives in this repository: JASP
 files, datasets, worksheets, and the reading list. Nothing here requires a
 GitHub account — use the green **Code → Download ZIP** button if you would
-rather have the whole thing as a folder. For a more accessible overview, visit:
-
-📄 **Workshop website:** <https://hrgodmann.github.io/BayesianStatisticsWorkshop/>
+rather have the whole thing as a folder.
 
 ---
 
 ## Before you arrive
 
-Please install the software **before day 1** — as sometimes troubleshoot installation takes a while. If you have any questions, don't hesitate to send us a mail up front.
+Please install the software **before day 1** — as sometimes troubleshoot installation takes a while. If you have any questions, don't hesitate to send us a mail up front (bayescourse@gmail.com).
 
 ➡️ **[setup/README.md](setup/README.md)** — step-by-step install guide for JASP,
 R, RStudio and the Stan toolchain, plus a script that checks whether
@@ -76,11 +74,9 @@ Sessions run in this order, with breaks and lunch along the way.
 | Folder | What you'll find |
 |---|---|
 | [`setup/`](setup/) | Install guide and an installation-check script — start here |
-| [`day-1/`](day-1/) | Day 1 JASP files and datasets |
-| [`day-2/`](day-2/) | Day 2 JASP files, R material, and datasets |
-| [`bring-your-own-data/`](bring-your-own-data/) | Worksheet for re-analysing your own data on day 2 |
-| [`resources/`](resources/) | Reporting checklist and the further-reading list |
-| [`docs/`](docs/) | Source of the workshop website |
+| [`day-1/`](day-1/) | Day 1 slides, JASP files and datasets |
+| [`day-2/`](day-2/) | Day 2 slides, JASP files, R material, and datasets |
+| [`bring-your-own-data/`](bring-your-own-data/) | Example datasets |
 
 ---
 
@@ -115,8 +111,8 @@ co-founder of JASP Services B.V.
 
 ## Questions during the workshop
 
-Open an [issue](../../issues) or just ask us in the room. If something in these
-materials is broken or unclear after the workshop, an issue is still the best
+Ask us! Or send us an email (bayescourse@gmail.com). If something in these
+materials is broken or unclear after the workshop, an email is still the best
 way to reach us.
 
 ## License
