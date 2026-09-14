@@ -33,8 +33,6 @@ Three analyses, three real datasets. Follow along on your own machine.
 
 ### 8 · Further reading · Julius & Henrik
 
-See [`../resources/further-reading.md`](../resources/further-reading.md).
-
 ### 9 · Discussion, feedback, outlook to day 2 · Julius & Henrik
 
 ---
