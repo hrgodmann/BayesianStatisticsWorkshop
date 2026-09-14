@@ -18,7 +18,7 @@ run the installation check.
 > minutes. Run the installation check **before** the workshop so this does not
 > eat into the session.
 
-### 3 · How to report a Bayesian analysis · Julius
+### 3 · How to conduct and report a Bayesian analysis · Julius
 
 ### 4 · Your data, your analysis · Julius & Henrik
 
