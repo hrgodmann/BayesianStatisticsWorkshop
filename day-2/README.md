@@ -12,16 +12,7 @@ run the installation check.
 
 ### 1 · Bayesian multi-model inference · Henrik
 
-- Theory: Model averaging and inclusion Bayes factors
-- **Hands-on:** linear regression in JASP
-- **Hands-on:** ANOVA in JASP
-
-### 2 · Mixed-effects regression in R with `brms`
-
-- Theory — *Julius*
-- Prior predictive checks — *Henrik*
-- Posterior predictive checks — *Henrik*
-- Implementation — walking through a full model together
+### 2 · Mixed-effects regression in R with `brms` · Julius & Henrik
 
 > ⚠️ The first `brms` model you fit compiles Stan code, which can take a few
 > minutes. Run the installation check **before** the workshop so this does not
@@ -38,15 +29,9 @@ analysis. We circulate and help. Short round of conclusions at the end.
 
 Worksheet: [`../bring-your-own-data/`](../bring-your-own-data/README.md)
 
-### 5 · Beyond the workshop
+### 5 · Beyond the workshop · Julius & Henrik
 
-- Simulation-based calibration (SBC) — *Henrik*
-- In R: [Stan](https://mc-stan.org), [`bridgesampling`](https://cran.r-project.org/package=bridgesampling),
-  [`blavaan`](https://ecmerkle.github.io/blavaan/), [`bsts`](https://cran.r-project.org/package=bsts),
-  [`RoBMA`](https://fbartos.github.io/RoBMA/) — *Julius*
-- Further reading — *Julius & Henrik*
-
-### 6 · Discussion & close — Julius & Henrik
+### 6 · Discussion & close · Julius & Henrik
 
 ---
 

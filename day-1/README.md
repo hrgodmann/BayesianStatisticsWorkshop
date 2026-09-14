@@ -11,34 +11,13 @@ installed, see [`../setup/`](../setup/README.md).
 
 ### 1 · Introduction & peer exchange · Julius
 
-- Who we are, and what we do
-- Who you are: your research, your methods
-- What have you heard about Bayesian statistics?
-- Have you used Bayesian methods? If yes — how did it go? If no — what stopped you?
-- Bayes is increasingly common (with numbers)
-
 ### 2 · Bayesian basics · Julius
-
-- The Bayesian learning cycle
-- Probability
-- Bayes' theorem
 
 ### 3 · Bayesian estimation · Julius
 
-- Theory
-- **Hands-on:** beta-binomial in JASP
-
 ### 4 · Bayesian testing · Julius
 
-- Theory
-- **Hands-on:** beta-binomial in JASP
-
 ### 5 · Why bother? The benefits · Julius
-
-- What a *p*-value cannot do: no measure of evidence; optional stopping;
-  evidence only *against* the null. (*p* = .049 corresponds to which Bayes factor?)
-- Evidence of an effect vs. evidence of absence vs. absence of evidence
-- Credible intervals vs. confidence intervals
 
 ### 6 · JASP with real data · Henrik
 
