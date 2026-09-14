@@ -7,9 +7,9 @@ installed, see [`../setup/`](../setup/README.md).
 
 ---
 
-## Run sheet
+## Sessions
 
-### 1 · Introduction & peer exchange — 30 min · Julius
+### 1 · Introduction & peer exchange · Julius
 
 - Who we are, and what we do
 - Who you are: your research, your methods
@@ -17,30 +17,30 @@ installed, see [`../setup/`](../setup/README.md).
 - Have you used Bayesian methods? If yes — how did it go? If no — what stopped you?
 - Bayes is increasingly common (with numbers)
 
-### 2 · Bayesian basics — 15 min · Julius
+### 2 · Bayesian basics · Julius
 
 - The Bayesian learning cycle
 - Probability
 - Bayes' theorem
 
-### 3 · Bayesian estimation — 30 min · Julius
+### 3 · Bayesian estimation · Julius
 
 - Theory
 - **Hands-on:** beta-binomial in JASP
 
-### 4 · Bayesian testing — 30 min · Julius
+### 4 · Bayesian testing · Julius
 
 - Theory
 - **Hands-on:** beta-binomial in JASP
 
-### 5 · Why bother? The benefits — 20 min · Julius
+### 5 · Why bother? The benefits · Julius
 
 - What a *p*-value cannot do: no measure of evidence; optional stopping;
   evidence only *against* the null. (*p* = .049 corresponds to which Bayes factor?)
 - Evidence of an effect vs. evidence of absence vs. absence of evidence
 - Credible intervals vs. confidence intervals
 
-### 6 · JASP with real data — 3 × 30 min · Henrik
+### 6 · JASP with real data · Henrik
 
 Three analyses, three real datasets. Follow along on your own machine.
 
@@ -50,13 +50,13 @@ Three analyses, three real datasets. Follow along on your own machine.
 | 6b | A/B test & *t*-test | <!-- TODO: dataset name --> |
 | 6c | Two proportions | <!-- TODO: dataset name --> |
 
-### 7 · JASP AI — 20 min · Henrik
+### 7 · JASP AI · Henrik
 
-### 8 · Further reading — 15 min · Julius & Henrik
+### 8 · Further reading · Julius & Henrik
 
 See [`../resources/further-reading.md`](../resources/further-reading.md).
 
-### 9 · Discussion, feedback, outlook to day 2 — 35 min · Julius & Henrik
+### 9 · Discussion, feedback, outlook to day 2 · Julius & Henrik
 
 ---
 

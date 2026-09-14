@@ -32,25 +32,21 @@ way. See **[bring-your-own-data/](bring-your-own-data/README.md)**.
 Estimation, testing, and why any of it is worth your time. All hands-on work in
 JASP; no coding required.
 
-| Time | Session | | Lead |
-|---|---|---|---|
-| 10:00 | **Introduction & peer exchange** | 30 min | Julius |
-| 10:30 | **Bayesian basics** — learning cycle, probability, Bayes' theorem | 15 min | Julius |
-| 10:45 | **Bayesian estimation** — theory + beta-binomial in JASP | 30 min | Julius |
-| 11:15 | *Break* | 15 min | |
-| 11:30 | **Bayesian testing** — theory + beta-binomial in JASP | 30 min | Julius |
-| 12:00 | **Why bother?** — the benefits of going Bayesian | 20 min | Julius |
-| 12:20 | *Lunch* | 45 min | |
-| 13:05 | **JASP with real data I** — correlation | 30 min | Henrik |
-| 13:35 | **JASP with real data II** — A/B test & *t*-test | 30 min | Henrik |
-| 14:05 | *Break* | 15 min | |
-| 14:20 | **JASP with real data III** — two proportions | 30 min | Henrik |
-| 14:50 | **JASP AI** | 20 min | Henrik |
-| 15:10 | **Further reading** | 15 min | Julius & Henrik |
-| 15:25 | **Discussion, feedback, outlook to day 2** | 35 min | Julius & Henrik |
-| 16:00 | *End* | | |
+| Session | Lead |
+|---|---|
+| **Introduction & peer exchange** | Julius |
+| **Bayesian basics** — learning cycle, probability, Bayes' theorem | Julius |
+| **Bayesian estimation** — theory + beta-binomial in JASP | Julius |
+| **Bayesian testing** — theory + beta-binomial in JASP | Julius |
+| **Why bother?** — the benefits of going Bayesian | Julius |
+| **JASP with real data I** — correlation | Henrik |
+| **JASP with real data II** — A/B test & *t*-test | Henrik |
+| **JASP with real data III** — two proportions | Henrik |
+| **JASP AI** | Henrik |
+| **Further reading** | Julius & Henrik |
+| **Discussion, feedback, outlook to day 2** | Julius & Henrik |
 
-<sub>Day 1 clock times are provisional — durations are fixed, the start time is <!-- TODO: confirm day 1 start -->to be confirmed.</sub>
+Sessions run in this order, with breaks and lunch along the way.
 
 📂 Materials: **[day-1/](day-1/README.md)**
 
@@ -60,17 +56,16 @@ JASP; no coding required.
 
 From one model to many, then into R for mixed-effects models with `brms`.
 
-| Time | Session | | Lead |
-|---|---|---|---|
-| 10:00 | **Bayesian multi-model inference** — theory, linear regression & ANOVA in JASP | 75 min | Henrik |
-| 11:15 | *Break* | 15 min | |
-| 11:30 | **Mixed-effects regression in R with `brms`** — theory, prior & posterior predictive checks, implementation | 120 min | Julius & Henrik |
-| 13:30 | *Lunch* | 30 min | |
-| 14:00 | **How to report a Bayesian analysis** | 20 min | Julius |
-| 14:20 | **Your data, your analysis** — redo your last frequentist analysis | 60 min | Julius & Henrik |
-| 15:20 | **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | 20 min | Julius & Henrik |
-| 15:40 | **Discussion & close** | 20 min | Julius & Henrik |
-| 16:00 | *End* | | |
+| Session | Lead |
+|---|---|
+| **Bayesian multi-model inference** — theory, linear regression & ANOVA in JASP | Henrik |
+| **Mixed-effects regression in R with `brms`** — theory, prior & posterior predictive checks, implementation | Julius & Henrik |
+| **How to report a Bayesian analysis** | Julius |
+| **Your data, your analysis** — redo your last frequentist analysis | Julius & Henrik |
+| **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | Julius & Henrik |
+| **Discussion & close** | Julius & Henrik |
+
+Sessions run in this order, with breaks and lunch along the way.
 
 📂 Materials: **[day-2/](day-2/README.md)**
 

@@ -1,24 +1,22 @@
 # Day 2 — Multi-model inference and hierarchical models
 
-Morning in **JASP**, afternoon in **R**. Make sure R, RStudio and `brms` are
+We start in **JASP** and move to **R**. Make sure R, RStudio and `brms` are
 working before the session starts — see [`../setup/`](../setup/README.md) and
 run the installation check.
-
-**10:00 – 16:00**
 
 [← back to the main page](../README.md)
 
 ---
 
-## Run sheet
+## Sessions
 
-### 1 · Bayesian multi-model inference — 75 min · Henrik
+### 1 · Bayesian multi-model inference · Henrik
 
 - Theory: Model averaging and inclusion Bayes factors
 - **Hands-on:** linear regression in JASP
 - **Hands-on:** ANOVA in JASP
 
-### 2 · Mixed-effects regression in R with `brms` — 120 min
+### 2 · Mixed-effects regression in R with `brms`
 
 - Theory — *Julius*
 - Prior predictive checks — *Henrik*
@@ -29,18 +27,18 @@ run the installation check.
 > minutes. Run the installation check **before** the workshop so this does not
 > eat into the session.
 
-### 3 · How to report a Bayesian analysis — 20 min · Julius
+### 3 · How to report a Bayesian analysis · Julius
 
 Checklist to take away: [`../resources/reporting-checklist.md`](../resources/reporting-checklist.md)
 
-### 4 · Your data, your analysis — 60 min · Julius & Henrik
+### 4 · Your data, your analysis · Julius & Henrik
 
 Take the last frequentist analysis you ran, and run it again as a Bayesian
 analysis. We circulate and help. Short round of conclusions at the end.
 
 Worksheet: [`../bring-your-own-data/`](../bring-your-own-data/README.md)
 
-### 5 · Beyond the workshop — 20 min
+### 5 · Beyond the workshop
 
 - Simulation-based calibration (SBC) — *Henrik*
 - In R: [Stan](https://mc-stan.org), [`bridgesampling`](https://cran.r-project.org/package=bridgesampling),

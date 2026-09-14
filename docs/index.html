@@ -120,16 +120,12 @@
   }
   .day-head .when{font-size:14px; color:var(--ink-3); margin-left:auto}
   .row{
-    display:grid; grid-template-columns:76px 1fr 92px;
+    display:grid; grid-template-columns:1fr 104px;
     gap:16px; padding:14px 0; border-bottom:1px solid var(--line);
     align-items:baseline;
   }
   .row:last-child{border-bottom:none}
   .row.break{color:var(--ink-3); font-style:italic}
-  .time{
-    font-variant-numeric:tabular-nums; font-size:14px;
-    color:var(--ink-3); font-weight:500;
-  }
   .what{font-size:16px}
   .what .detail{display:block; font-size:14px; color:var(--ink-3); margin-top:2px}
   .who{
@@ -137,8 +133,8 @@
     letter-spacing:.03em;
   }
   @media (max-width:640px){
-    .row{grid-template-columns:64px 1fr; gap:12px}
-    .who{grid-column:2; text-align:left; margin-top:-8px}
+    .row{grid-template-columns:1fr; gap:2px}
+    .who{text-align:left; margin-top:2px}
   }
 
   /* ---------- cards ---------- */
@@ -215,7 +211,7 @@
 <section id="schedule">
   <div class="wrap">
     <h2>Schedule</h2>
-    <p class="sub">Times are indicative; we adapt to the room.</p>
+    <p class="sub">Sessions run in this order, with breaks and lunch along the way.</p>
 
     <div class="day">
       <div class="day-head">
@@ -223,38 +219,31 @@
         <span class="when">All hands-on work in JASP</span>
       </div>
 
-      <div class="row"><span class="time">10:00</span><span class="what">Introduction &amp; peer exchange<span class="detail">Who we are, who you are, and what you have heard about Bayes</span></span><span class="who">Julius</span></div>
-      <div class="row"><span class="time">10:30</span><span class="what">Bayesian basics<span class="detail">The learning cycle · probability · Bayes' theorem</span></span><span class="who">Julius</span></div>
-      <div class="row"><span class="time">10:45</span><span class="what">Bayesian estimation<span class="detail">Theory, then the beta-binomial in JASP</span></span><span class="who">Julius</span></div>
-      <div class="row break"><span class="time">11:15</span><span class="what">Break</span><span class="who"></span></div>
-      <div class="row"><span class="time">11:30</span><span class="what">Bayesian testing<span class="detail">Theory, then the beta-binomial in JASP</span></span><span class="who">Julius</span></div>
-      <div class="row"><span class="time">12:00</span><span class="what">Why bother? The benefits<span class="detail">What a <em>p</em>-value cannot do · evidence of absence vs. absence of evidence · credible vs. confidence intervals</span></span><span class="who">Julius</span></div>
-      <div class="row break"><span class="time">12:20</span><span class="what">Lunch</span><span class="who"></span></div>
-      <div class="row"><span class="time">13:05</span><span class="what">JASP with real data I — correlation</span><span class="who">Henrik</span></div>
-      <div class="row"><span class="time">13:35</span><span class="what">JASP with real data II — A/B test &amp; <em>t</em>-test</span><span class="who">Henrik</span></div>
-      <div class="row break"><span class="time">14:05</span><span class="what">Break</span><span class="who"></span></div>
-      <div class="row"><span class="time">14:20</span><span class="what">JASP with real data III — two proportions</span><span class="who">Henrik</span></div>
-      <div class="row"><span class="time">14:50</span><span class="what">JASP AI</span><span class="who">Henrik</span></div>
-      <div class="row"><span class="time">15:10</span><span class="what">Further reading</span><span class="who">Julius &amp; Henrik</span></div>
-      <div class="row"><span class="time">15:25</span><span class="what">Discussion, feedback, outlook to day 2</span><span class="who">Julius &amp; Henrik</span></div>
-      <div class="row break"><span class="time">16:00</span><span class="what">End</span><span class="who"></span></div>
+      <div class="row"><span class="what">Introduction &amp; peer exchange<span class="detail">Who we are, who you are, and what you have heard about Bayes</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="what">Bayesian basics<span class="detail">The learning cycle · probability · Bayes' theorem</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="what">Bayesian estimation<span class="detail">Theory, then the beta-binomial in JASP</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="what">Bayesian testing<span class="detail">Theory, then the beta-binomial in JASP</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="what">Why bother? The benefits<span class="detail">What a <em>p</em>-value cannot do · evidence of absence vs. absence of evidence · credible vs. confidence intervals</span></span><span class="who">Julius</span></div>
+      <div class="row"><span class="what">JASP with real data I — correlation</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="what">JASP with real data II — A/B test &amp; <em>t</em>-test</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="what">JASP with real data III — two proportions</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="what">JASP AI</span><span class="who">Henrik</span></div>
+      <div class="row"><span class="what">Further reading</span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="what">Discussion, feedback, outlook to day 2</span><span class="who">Julius &amp; Henrik</span></div>
     </div>
 
     <div class="day">
       <div class="day-head">
         <h3>Day 2 — Multi-model inference &amp; hierarchical models</h3>
-        <span class="when">Morning in JASP · afternoon in R</span>
+        <span class="when">Starts in JASP, moves to R</span>
       </div>
 
-      <div class="row"><span class="time">10:00</span><span class="what">Bayesian multi-model inference<span class="detail">Theory · linear regression and ANOVA, hands-on in JASP</span></span><span class="who">Henrik</span></div>
-      <div class="row break"><span class="time">11:15</span><span class="what">Break</span><span class="who"></span></div>
-      <div class="row"><span class="time">11:30</span><span class="what">Mixed-effects regression in R with <code>brms</code><span class="detail">Theory · prior predictive · posterior predictive · implementation</span></span><span class="who">Julius &amp; Henrik</span></div>
-      <div class="row break"><span class="time">13:30</span><span class="what">Lunch</span><span class="who"></span></div>
-      <div class="row"><span class="time">14:00</span><span class="what">How to report a Bayesian analysis</span><span class="who">Julius</span></div>
-      <div class="row"><span class="time">14:20</span><span class="what">Your data, your analysis<span class="detail">Redo your last frequentist analysis the Bayesian way</span></span><span class="who">Julius &amp; Henrik</span></div>
-      <div class="row"><span class="time">15:20</span><span class="what">Beyond the workshop<span class="detail">Simulation-based calibration · Stan, bridgesampling, blavaan, bsts, RoBMA · further reading</span></span><span class="who">Julius &amp; Henrik</span></div>
-      <div class="row"><span class="time">15:40</span><span class="what">Discussion &amp; close</span><span class="who">Julius &amp; Henrik</span></div>
-      <div class="row break"><span class="time">16:00</span><span class="what">End</span><span class="who"></span></div>
+      <div class="row"><span class="what">Bayesian multi-model inference<span class="detail">Theory · linear regression and ANOVA, hands-on in JASP</span></span><span class="who">Henrik</span></div>
+      <div class="row"><span class="what">Mixed-effects regression in R with <code>brms</code><span class="detail">Theory · prior predictive · posterior predictive · implementation</span></span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="what">How to report a Bayesian analysis</span><span class="who">Julius</span></div>
+      <div class="row"><span class="what">Your data, your analysis<span class="detail">Redo your last frequentist analysis the Bayesian way</span></span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="what">Beyond the workshop<span class="detail">Simulation-based calibration · Stan, bridgesampling, blavaan, bsts, RoBMA · further reading</span></span><span class="who">Julius &amp; Henrik</span></div>
+      <div class="row"><span class="what">Discussion &amp; close</span><span class="who">Julius &amp; Henrik</span></div>
     </div>
   </div>
 </section>
