@@ -1,4 +1,4 @@
-# Worksheet — your data, your analysis
+# Guide — your data, your analysis
 
 **Name:** ________________________   **Date:** ______________
 

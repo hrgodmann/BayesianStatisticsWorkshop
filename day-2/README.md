@@ -25,7 +25,7 @@ run the installation check.
 Take the last frequentist analysis you ran, and run it again as a Bayesian
 analysis. We circulate and help. Short round of conclusions at the end.
 
-Worksheet: [`../bring-your-own-data/`](../bring-your-own-data/README.md)
+Guide: [`../bring-your-own-data/`](../bring-your-own-data/README.md)
 
 ### 5 · Beyond the workshop · Julius & Henrik
 

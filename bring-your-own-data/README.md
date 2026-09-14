@@ -35,10 +35,10 @@ we will not ask you to share your data with us or with the room.
 
 ---
 
-## Worksheet
+## Guide
 
-Print [`worksheet.md`](worksheet.md), or just keep it open in a window. It walks
-you through the re-analysis in six steps and gives you something to talk from
+Print [`guide.md`](guide.md), or just keep it open in a window. It walks
+you through the re-analysis in seven steps and gives you something to talk from
 in the closing round.
 
 ---
