@@ -26,9 +26,7 @@ you already understand from a new angle.
 
 ### If you cannot bring your own data
 
-That is fine — no unpublished data on a shared laptop, no ethics headache. Come
-anyway. We will have datasets available, and pairing up with someone who did
-bring data works well.
+That is fine. We can pair you up with someone who did bring data, or have you analyze a dataset we provide.
 
 ### A note on sensitive data
 
