@@ -4,7 +4,7 @@
 
 **Gießen, Germany · 17 + 18.09.2026**
 
-Everything you need for the workshop lives in this repository: slides, JASP
+Everything you need for the workshop lives in this repository: JASP
 files, datasets, worksheets, and the reading list. Nothing here requires a
 GitHub account — use the green **Code → Download ZIP** button if you would
 rather have the whole thing as a folder. For a more accessible overview, visit:
@@ -76,14 +76,11 @@ Sessions run in this order, with breaks and lunch along the way.
 | Folder | What you'll find |
 |---|---|
 | [`setup/`](setup/) | Install guide and an installation-check script — start here |
-| [`day-1/`](day-1/) | Day 1 slides, JASP files, and datasets |
-| [`day-2/`](day-2/) | Day 2 slides, JASP files, R material, and datasets |
+| [`day-1/`](day-1/) | Day 1 JASP files and datasets |
+| [`day-2/`](day-2/) | Day 2 JASP files, R material, and datasets |
 | [`bring-your-own-data/`](bring-your-own-data/) | Worksheet for re-analysing your own data on day 2 |
 | [`resources/`](resources/) | Reporting checklist and the further-reading list |
 | [`docs/`](docs/) | Source of the workshop website |
-
-Slides are uploaded as PDFs shortly before each session; if a folder looks
-empty, it will not stay that way.
 
 ---
 

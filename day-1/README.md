@@ -64,9 +64,8 @@ See [`../resources/further-reading.md`](../resources/further-reading.md).
 
 | Folder | Contents |
 |---|---|
-| [`slides/`](slides/) | Slide decks (PDF), one per session |
 | [`jasp/`](jasp/) | `.jasp` files — open these to see the finished analyses |
 | [`data/`](data/) | Datasets used in session 6, as `.csv` |
 
 **Naming convention:** `NN-topic.ext`, matching the session numbers above —
-e.g. `03-bayesian-estimation.pdf`, `06a-correlation.jasp`, `06a-correlation.csv`.
+e.g. `06a-correlation.jasp`, `06a-correlation.csv`.

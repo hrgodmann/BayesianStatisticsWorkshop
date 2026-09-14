@@ -54,7 +54,6 @@ Worksheet: [`../bring-your-own-data/`](../bring-your-own-data/README.md)
 
 | Folder | Contents |
 |---|---|
-| [`slides/`](slides/) | Slide decks (PDF), one per session |
 | [`jasp/`](jasp/) | `.jasp` files for the regression and ANOVA sessions |
 | [`r/`](r/) | R scripts for the `brms` session |
 | [`data/`](data/) | Datasets, as `.csv` |
