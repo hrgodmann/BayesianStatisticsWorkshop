@@ -1,76 +1,52 @@
 # Guide — your data, your analysis
 
-**Name:** ________________________   **Date:** ______________
-
-Work through this with your own dataset. Take notes as you go; you will want
-them for the closing round.
+Take the last frequentist analysis you ran, and run it again as a Bayesian one.
+This is a route through it rather than a form: skip what does not apply, take
+notes only where they help you, and grab one of us whenever you get stuck.
 
 [← back to the session page](README.md)
 
 ---
 
-## 1 · What did you do before?
+## 1 · Start from what you already have
 
-**Dataset (one sentence — what was measured, on whom?):**
+Remind yourself what the original analysis was — what was measured and on whom,
+which test you ran, and what you reported: the test statistic, the *p*-value,
+the effect size, the confidence interval.
 
-<br>
-
-**The analysis you ran:**
-
-<br>
-
-**What you reported:**
-
-| | |
-|---|---|
-| Test statistic | |
-| *p*-value | |
-| Effect size / estimate | |
-| Confidence interval | |
-
-**The conclusion you drew, in words:**
-
-<br>
-<br>
+Most of all, the conclusion you drew in words. That sentence is what we are
+going to revisit.
 
 ---
 
 ## 2 · State the two hypotheses
 
-A Bayes factor compares two models. Write them both out.
+A Bayes factor always compares two models, so both have to be explicit. What
+does "no effect" mean here, concretely? And what does "an effect" mean — how
+large would you actually expect it to be?
 
-**H₀ (what does "no effect" mean here, concretely?):**
-
-<br>
-
-**H₁ (what does "an effect" mean — and how big would you expect it to be?):**
-
-<br>
-
-> If H₁ is hard to state, that is informative. It usually means the original
-> analysis was testing against a null without a clear alternative in mind.
+> If H₁ is hard to pin down, that is informative in itself. It usually means the
+> original analysis was testing against a null without a clear alternative in
+> mind.
 
 ---
 
 ## 3 · Choose a prior
 
-**Prior used:** ☐ default ☐ informed
+Default or informed — either is defensible. What matters is that you can name
+it afterwards.
 
-**If informed, on what basis?** (previous study, meta-analysis, theory, gut feeling)
-
-<br>
-
-**If default, what is the default?** Look it up in the JASP output — you will
-need to name it in a write-up.
-
-<br>
+If you take the default, find out from the JASP output what that default
+actually is; you will need it in a write-up. If you go informed, be ready to say
+what it rests on: a previous study, a meta-analysis, theory, or a considered
+guess.
 
 ---
 
 ## 4 · Run it
 
-In JASP: the Bayesian version of your analysis sits next to the classical one
-in the same menu.
+In JASP the Bayesian version of your analysis sits next to the classical one in
+the same menu.
 
 | Frequentist | Bayesian equivalent in JASP |
 |---|---|
@@ -83,73 +59,43 @@ in the same menu.
 | Test of two proportions | Bayesian A/B Test |
 | Mixed model | `brms` in R — grab one of us |
 
-**Record what you get:**
-
-| | |
-|---|---|
-| BF₁₀ | |
-| Posterior median / mean | |
-| 95% credible interval | |
-| Convergence looked OK? | ☐ yes ☐ no ☐ n/a |
+Worth keeping track of as you go: the Bayes factor, the posterior median, the
+95% credible interval, and whether convergence looked healthy.
 
 ---
 
 ## 5 · Check it holds up
 
-**Robustness / prior sensitivity check** — vary the prior width. Does the
-conclusion survive?
+Vary the prior width and see whether the conclusion survives. This matters most
+when the Bayes factor sits near 1.
 
-<br>
-
-**Posterior distribution** — take a look at the plot. Is it narrow or wide?
-Symmetric? Does it exclude zero, and by how much?
-
-<br>
+Then look at the posterior itself. Is it narrow or wide? Symmetric? Does it
+exclude zero, and by how much?
 
 ---
 
 ## 6 · Interpret
 
-Circle one, and say why:
+Three outcomes are possible, and telling them apart is the whole point:
+**evidence for an effect**, **evidence for the absence of an effect**, or
+**absence of evidence** — the data simply being uninformative.
 
-> **Evidence for an effect** · **Evidence for the absence of an effect** ·
-> **Absence of evidence**
-
-**Why:**
-
-<br>
-
-**Did the Bayesian analysis agree with what you originally concluded?**
-
-☐ Yes, same story  ☐ Same direction, different confidence  ☐ Meaningfully different
-
-**If it differed — what changed, and which version do you believe?**
-
-<br>
-<br>
+Which one is yours? And does it agree with what you originally concluded — same
+story, same direction but different confidence, or meaningfully different? If it
+differed, which version do you believe now?
 
 ---
 
 ## 7 · Write the sentence
 
-Write the two or three sentences you would put in a paper.
-
-<br>
-<br>
-<br>
+Have a go at the two or three sentences you would put in a paper.
 
 ---
 
-## Notes for the discussion
+## For the closing round
 
-**What surprised you:**
+Nothing formal — we will just go round the room. Worth having in mind: what
+surprised you, what was confusing or awkward or broken, and what you would need
+in order to use this in your own work.
 
-<br>
-
-**What was confusing, awkward, or broken:**
-
-<br>
-
-**What you would need in order to use this in your own work:**
-
-<br>
+The middle one is what we most want to hear.

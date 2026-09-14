@@ -37,9 +37,9 @@ we will not ask you to share your data with us or with the room.
 
 ## Guide
 
-Print [`guide.md`](guide.md), or just keep it open in a window. It walks
-you through the re-analysis in seven steps and gives you something to talk from
-in the closing round.
+Keep [`guide.md`](guide.md) open in a window as you work. It walks you through
+the re-analysis in seven steps and gives you something to talk from in the
+closing round. Nothing in it has to be filled in.
 
 ---
 
