@@ -132,8 +132,7 @@ Circle one, and say why:
 
 ## 7 · Write the sentence
 
-Using the [reporting checklist](../resources/reporting-checklist.md), write the
-two or three sentences you would put in a paper.
+Write the two or three sentences you would put in a paper.
 
 <br>
 <br>

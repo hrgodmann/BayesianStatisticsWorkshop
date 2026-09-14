@@ -20,8 +20,6 @@ run the installation check.
 
 ### 3 · How to report a Bayesian analysis · Julius
 
-Checklist to take away: [`../resources/reporting-checklist.md`](../resources/reporting-checklist.md)
-
 ### 4 · Your data, your analysis · Julius & Henrik
 
 Take the last frequentist analysis you ran, and run it again as a Bayesian

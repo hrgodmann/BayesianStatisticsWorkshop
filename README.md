@@ -5,7 +5,7 @@
 **Gießen, Germany · 17 + 18.09.2026**
 
 Everything you need for the workshop lives in this repository: JASP
-files, datasets, worksheets, and the reading list. Nothing here requires a
+files, datasets, and worksheets. Nothing here requires a
 GitHub account — use the green **Code → Download ZIP** button if you would
 rather have the whole thing as a folder.
 
