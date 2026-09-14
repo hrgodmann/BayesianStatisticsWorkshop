@@ -89,9 +89,8 @@ If the script ends with `ALL CHECKS PASSED`, you are ready.
 
 ## If something goes wrong
 
-Bring the **full error message** — a screenshot or a copy-paste of everything
-the console printed, not just the last line. Send it ahead of time if you can:
-open an [issue](../../../issues) or email us. Most Stan installation problems
+Use an LLM of your choice to debug, or send us an email ([bayescourse@gmail.com](mailto:bayescourse@gmail.com)) before the workshop with the **full error message** — a screenshot or a copy-paste of everything
+the console printed, not just the last line. Most Stan installation problems
 have a known fix, but we need to see the actual error to name it.
 
 Common ones:
