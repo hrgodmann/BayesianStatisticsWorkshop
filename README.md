@@ -1,4 +1,4 @@
-# Introduction to Bayesian Modeling
+# Introduction to Bayesian Inference
 
 ### A Hands-on Workshop for Early-Career Researchers
 
@@ -122,6 +122,6 @@ MIT License.
 
 If you use these materials, please cite them as:
 
-> Pfadt, J. M., & Godmann, H. R. (2026). *Introduction to Bayesian Modeling:
+> Pfadt, J. M., & Godmann, H. R. (2026). *Introduction to Bayesian Inference:
 > A Hands-on Workshop for Early-Career Researchers.* Gießen.
 > https://github.com/hrgodmann/BayesianStatisticsWorkshop
