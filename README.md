@@ -36,15 +36,14 @@ JASP; no coding required.
 | **Bayesian basics** — learning cycle, probability, Bayes' theorem | Julius |
 | **Bayesian estimation** — theory + beta-binomial in JASP | Julius |
 | **Bayesian testing** — theory + beta-binomial in JASP | Julius |
-| **Why bother?** — the benefits of going Bayesian | Julius |
+| **Bayesian benefits** — the benefits of going Bayesian | Julius |
 | **JASP with real data I** — correlation | Henrik |
 | **JASP with real data II** — A/B test & *t*-test | Henrik |
 | **JASP with real data III** — two proportions | Henrik |
 | **JASP AI** | Henrik |
-| **Further reading** | Julius & Henrik |
-| **Discussion, feedback, outlook to day 2** | Julius & Henrik |
+| **Conclusions** — further reading, discussion, feedback, outlook to day 2 | Julius & Henrik |
 
-Sessions run in this order, with breaks and lunch along the way.
+Sessions run in this order, with breaks along the way.
 
 📂 Materials: **[day-1/](day-1/README.md)**
 
@@ -59,11 +58,11 @@ From one model to many, then into R for mixed-effects models with `brms`.
 | **Bayesian multi-model inference** — theory, linear regression & ANOVA in JASP | Henrik |
 | **Mixed-effects regression in R with `brms`** — theory, prior & posterior predictive checks, implementation | Julius & Henrik |
 | **How to conduct and report a Bayesian analysis** | Julius |
-| **Your data, your analysis** — redo your last frequentist analysis | Julius & Henrik |
+| **Bring your own data** — redo your last frequentist analysis | Julius & Henrik |
 | **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | Julius & Henrik |
-| **Discussion & close** | Julius & Henrik |
+| **Conclusions** | Julius & Henrik |
 
-Sessions run in this order, with breaks and lunch along the way.
+Sessions run in this order, with breaks along the way.
 
 📂 Materials: **[day-2/](day-2/README.md)**
 
