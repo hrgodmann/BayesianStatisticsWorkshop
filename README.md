@@ -58,7 +58,7 @@ From one model to many, then into R for mixed-effects models with `brms`.
 | **Bayesian multi-model inference** — theory, linear regression & ANOVA in JASP | Henrik |
 | **Mixed-effects regression in R with `brms`** — theory, prior & posterior predictive checks, implementation | Julius & Henrik |
 | **How to conduct and report a Bayesian analysis** | Julius |
-| **Your data, your analysis** — redo your last frequentist analysis | Julius & Henrik |
+| **Bring your own data** — redo your last frequentist analysis | Julius & Henrik |
 | **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | Julius & Henrik |
 | **Conclusions** | Julius & Henrik |
 

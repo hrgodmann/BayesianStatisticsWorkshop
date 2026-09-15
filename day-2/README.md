@@ -20,7 +20,7 @@ run the installation check.
 
 ### 3 · How to conduct and report a Bayesian analysis · Julius
 
-### 4 · Your data, your analysis · Julius & Henrik
+### 4 · Bring your own data · Julius & Henrik
 
 Take the last frequentist analysis you ran, and run it again as a Bayesian
 analysis. We circulate and help. Short round of conclusions at the end.
