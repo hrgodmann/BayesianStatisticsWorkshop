@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------
-# Introduction to Bayesian Modeling - installation check
+# Introduction to Bayesian Inference - installation check
 #
 # Run this whole script before day 2 of the workshop.
 # Select all (Ctrl/Cmd + A) and run (Ctrl/Cmd + Enter), or use
