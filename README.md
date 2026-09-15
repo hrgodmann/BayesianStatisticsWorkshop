@@ -43,7 +43,7 @@ JASP; no coding required.
 | **JASP AI** | Henrik |
 | **Conclusions** — further reading, discussion, feedback, outlook to day 2 | Julius & Henrik |
 
-Sessions run in this order, with breaks and lunch along the way.
+Sessions run in this order, with breaks along the way.
 
 📂 Materials: **[day-1/](day-1/README.md)**
 
@@ -62,7 +62,7 @@ From one model to many, then into R for mixed-effects models with `brms`.
 | **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | Julius & Henrik |
 | **Conclusions** | Julius & Henrik |
 
-Sessions run in this order, with breaks and lunch along the way.
+Sessions run in this order, with breaks along the way.
 
 📂 Materials: **[day-2/](day-2/README.md)**
 
