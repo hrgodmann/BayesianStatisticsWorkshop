@@ -59,7 +59,7 @@ From one model to many, then into R for mixed-effects models with `brms`.
 | **Mixed-effects regression in R with `brms`** — theory, prior & posterior predictive checks, implementation | Julius & Henrik |
 | **How to conduct and report a Bayesian analysis** | Julius |
 | **Bring your own data** — redo your last frequentist analysis | Julius & Henrik |
-| **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, `bsts`, `RoBMA`; further reading | Julius & Henrik |
+| **Beyond the workshop** — SBC; Stan, `bridgesampling`, `blavaan`, Bayesian state-space models, Bayesian Meta-Analysis | Julius & Henrik |
 | **Conclusions** | Julius & Henrik |
 
 Sessions run in this order, with breaks along the way.
