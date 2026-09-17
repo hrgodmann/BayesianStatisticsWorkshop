@@ -39,7 +39,6 @@ JASP; no coding required.
 | **Bayesian benefits** — the benefits of going Bayesian | Julius |
 | **JASP with real data I** — correlation | Henrik |
 | **JASP with real data II** — A/B test & *t*-test | Henrik |
-| **JASP with real data III** — two proportions | Henrik |
 | **JASP AI** | Henrik |
 | **Conclusions** — further reading, discussion, feedback, outlook to day 2 | Julius & Henrik |
 
