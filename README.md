@@ -38,7 +38,7 @@ JASP; no coding required.
 | **Bayesian testing** — theory + beta-binomial in JASP | Julius |
 | **Bayesian benefits** — the benefits of going Bayesian | Julius |
 | **JASP with real data I** — correlation | Henrik |
-| **JASP with real data II** — A/B test & *t*-test | Henrik |
+| **JASP with real data II** — *t*-test | Henrik |
 | **JASP AI** | Henrik |
 | **Conclusions** — further reading, discussion, feedback, outlook to day 2 | Julius & Henrik |
 
