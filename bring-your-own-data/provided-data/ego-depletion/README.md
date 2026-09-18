@@ -102,42 +102,18 @@ less than it appears to.
 ## What to try
 
 Take **one** of the four below through [the guide](../../guide.md). They are
-independent of each other, and there is not time for all four. If you finish
-early, come back for a second. If you do only one, do the first.
+independent of each other, and there is not time for all four. If you do only
+one, do the first.
 
-### 1 · The *p* = .057 result
-
-The Bayesian *t*-test for `condition` on `interference`.
-
-A *p* of .057 supports one sentence: we failed to reject the null. Ask the
-question it cannot answer — is this evidence that there is no effect, or no
-evidence either way? Then widen and narrow the prior and see whether your
-answer survives.
-
-### 2 · A significant correlation
-
-`interference` with `tiredness`: *r* = .046, *p* = .039.
-
-Significant, and in a paper it would be reported as such. Run the Bayesian
-version on the same numbers and decide which of the two you would want a reader
-to see.
-
-### 3 · One lab at a time
-
-Filter to a single lab (the funnel icon above the data in JASP) and run the
-`condition` → `interference` *t*-test on roughly 100 participants instead of
-2141. Do three or four labs.
-
-What would each of them have concluded, had it run this study alone and
-published the result?
-
-### 4 · In R, with `brms`
-
-`interference ~ condition + (1 | lab)`
-
-The same comparison as option 1, with the 23 labs accounted for: each lab gets
-its own baseline. One outcome, one predictor, one grouping factor. Compare the
-`condition` coefficient against the *p* = .057 result above.
+1. **The *p* = .057 result.** The Bayesian *t*-test for `condition` on
+   `interference`.
+2. **A significant correlation.** `interference` with `tiredness`, *r* = .046,
+   *p* = .039.
+3. **One lab at a time.** Filter to a single lab (the funnel icon above the
+   data in JASP) and run the same *t*-test on roughly 100 participants rather
+   than 2141. Do three or four labs.
+4. **In R, with `brms`.** `interference ~ condition + (1 | lab)` — option 1
+   again, with each lab given its own baseline.
 
 ### A warm-up
 

@@ -99,45 +99,16 @@ four identically.
 ## What to try
 
 Take **one** of the four below through [the guide](../../guide.md). They are
-independent of each other, and there is not time for all four. If you finish
-early, come back for a second. If you do only one, do the first.
+independent of each other, and there is not time for all four. If you do only
+one, do the first.
 
-### 1 · Are the four non-significant predictors alike?
-
-Run the Bayesian linear regression with all five predictors and read the
-inclusion Bayes factor for each.
-
-`hss`, `hse`, `satm` and `satv` were all non-significant and the write-up
-treated them as one group. Rank them by the Bayesian analysis instead. Is the
-evidence against including each the same, and is it the same kind of statement
-as *p* = .49?
-
-For at least one of them you will be able to say something you could not say
-before. For at least one other you will have to concede that you still do not
-know.
-
-### 2 · Do the SAT scores earn their place?
-
-Compare a model containing only `hsm` against `hsm` plus both SAT scores.
-
-A *p* of .388 licenses the claim that the SAT scores failed to improve the
-model. It does not license the claim that they are uninformative. Quantify the
-difference.
-
-### 3 · Which model should be reported?
-
-The Bayesian regression ranks all 32 combinations of the five predictors. Look
-at the posterior probability of the best one.
-
-It is lower than you would expect. What should be reported when no single model
-is convincingly correct, and what is model averaging for?
-
-### 4 · Does the conclusion depend on the prior?
-
-Change the prior scale in the Bayesian regression options and re-run.
-
-Which conclusions move and which stay put? A result that survives this is worth
-more than one that does not.
+1. **The four non-significant predictors.** Bayesian linear regression with all
+   five, and the inclusion Bayes factor for each. The write-up treated `hss`,
+   `hse`, `satm` and `satv` alike.
+2. **The SAT scores.** `hsm` on its own against `hsm` plus both SAT scores.
+3. **Model choice.** The Bayesian regression ranks all 32 combinations of the
+   five predictors. Look at the posterior probability of the best one.
+4. **The prior.** Change the prior scale in the regression options and re-run.
 
 ---
 
