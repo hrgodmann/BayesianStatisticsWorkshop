@@ -28,8 +28,6 @@ Rplots.pdf
 *.utf8.md
 
 # --- Instructor-only, never published ----------------------------------
-instructor-notes.R
-prepare-data.R
 analysis-brms.R
 
 # --- OS / editor -------------------------------------------------------

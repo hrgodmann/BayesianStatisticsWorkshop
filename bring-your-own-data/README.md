@@ -26,16 +26,20 @@ from a different angle.
 
 ### If you cannot bring your own data
 
-We can pair you with someone who did, or you can use one of ours:
-[`provided-data/`](provided-data/README.md). There are two, and you take one.
+We can pair you with someone who did, or you can take one of ours. There are
+two; take whichever is closer to the work you do.
 
-- **ego-depletion** — two groups, one outcome, reported as *p* = .057. Suitable
-  if your own work involves comparing conditions.
-- **college-success** — one outcome, five predictors, four of them not
-  significant. Suitable if your own work involves regression.
+- [**ego-depletion**](provided-data/ego-depletion/README.md) — two groups, one
+  outcome, reported as *p* = .057. Suitable if your own work involves comparing
+  conditions.
+- [**college-success**](provided-data/college-success/README.md) — one outcome,
+  five predictors, four of them not significant. Suitable if your own work
+  involves regression.
 
-Both are ready to analyse, and both come with the frequentist results written
-out, so you start at step 2 of the guide.
+Both are real published studies, ready to analyse, and both come with the
+frequentist results written out, so you start at step 2 of the guide. Each was
+chosen because the published conclusion contains at least one claim a Bayesian
+analysis would qualify — not because the original analysis was in error.
 
 ### Sensitive data
 
