@@ -17,14 +17,20 @@ Then write down the conclusion you drew, in words. Step 6 comes back to it.
 
 ---
 
-## 2 · State the two hypotheses
+## 2 · State what you are asking
 
-A Bayes factor compares two models, so both have to be explicit. What does "no
-effect" mean here? What does "an effect" mean, and how large would you expect
-it to be?
+Two questions are on the table, and they lead to different output. *How large
+is the effect?* is a question about estimation: what you want is a posterior
+and a credible interval. *Is there an effect at all?* is a question about
+testing: what you want is a comparison of two models, and a Bayes factor.
 
-> If H₁ is hard to specify, that is itself informative. It usually means the
-> original analysis tested against a null without a clear alternative in mind.
+Either is a legitimate place to start, and you can do both. But if you are
+testing, both models have to be explicit. What does "no effect" mean here? What
+does "an effect" mean, and how large would you expect it to be?
+
+> If the alternative is hard to specify, that is itself informative. It usually
+> means the original analysis tested against a null without a clear alternative
+> in mind.
 
 ---
 
