@@ -22,7 +22,7 @@ you already understand from a new angle.
       regression, mixed model
 - [ ] The **result you reported** — the *p*-value, the estimate, the conclusion
       you drew
-- [ ] Laptop with JASP installed and working (see [`../setup/`](../setup/README.md))
+- [ ] Laptop with JASP and R installed and working (see [`../setup/`](../setup/README.md))
 
 ### If you cannot bring your own data
 
