@@ -8,6 +8,7 @@
 *_files/
 renv/library/
 renv/staging/
+Rplots.pdf
 
 # --- Stan / brms -------------------------------------------------------
 *.rds

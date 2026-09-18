@@ -26,7 +26,18 @@ you already understand from a new angle.
 
 ### If you cannot bring your own data
 
-That is fine. We can pair you up with someone who did bring data, or have you analyze a dataset we provide.
+That is fine. We can pair you up with someone who did bring data — or you can
+take one of ours: **[`provided-data/`](provided-data/README.md)**.
+
+There are two, and you pick one:
+
+- **ego-depletion** — two groups, one outcome, and a reported result of
+  *p* = .057. For when your work looks like comparing conditions.
+- **college-success** — one outcome, five predictors, four of them "not
+  significant". For when your work looks like regression.
+
+Both are cleaned and ready, and both come with the frequentist analysis
+already written out, so you start at step 2 of the guide rather than step 1.
 
 ### A note on sensitive data
 
