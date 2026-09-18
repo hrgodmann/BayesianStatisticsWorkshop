@@ -1,11 +1,10 @@
 # Bring your own data
 
-On day 2 you spend an hour with your own data: **take the last frequentist
-analysis you ran, and run it again as a Bayesian analysis.** We will be walking
-around to help.
+On day 2 you spend an hour with your own data: take the last frequentist
+analysis you ran and run it again as a Bayesian analysis. We will circulate to
+help.
 
-This is the session people tell us they get the most out of. It works much
-better if you arrive prepared.
+The session works much better if you arrive prepared.
 
 [← back to the main page](../README.md)
 
@@ -13,57 +12,55 @@ better if you arrive prepared.
 
 ## What to bring
 
-**A dataset you already know**, and ideally already published or wrote up.
-Familiarity matters more than size or elegance — the point is to see a result
-you already understand from a new angle.
+A dataset you already know, ideally one you have already written up.
+Familiarity matters more than size: the point is to see a result you understand
+from a different angle.
 
-- [ ] The data file (`.csv` or `.sav` both work in JASP)
-- [ ] A note of **which analysis you ran** — *t*-test, correlation, ANOVA,
-      regression, mixed model
-- [ ] The **result you reported** — the *p*-value, the estimate, the conclusion
-      you drew
-- [ ] Laptop with JASP and R installed and working (see [`../setup/`](../setup/README.md))
+- [ ] The data file (JASP reads both `.csv` and `.sav`)
+- [ ] Which analysis you ran — *t*-test, correlation, ANOVA, regression, mixed
+      model
+- [ ] The result you reported — the *p*-value, the estimate, the conclusion you
+      drew
+- [ ] A laptop with JASP and R installed and working (see
+      [`../setup/`](../setup/README.md))
 
 ### If you cannot bring your own data
 
-That is fine. We can pair you up with someone who did bring data — or you can
-take one of ours: **[`provided-data/`](provided-data/README.md)**.
+We can pair you with someone who did, or you can use one of ours:
+[`provided-data/`](provided-data/README.md). There are two, and you take one.
 
-There are two, and you pick one:
+- **ego-depletion** — two groups, one outcome, reported as *p* = .057. Suitable
+  if your own work involves comparing conditions.
+- **college-success** — one outcome, five predictors, four of them not
+  significant. Suitable if your own work involves regression.
 
-- **ego-depletion** — two groups, one outcome, and a reported result of
-  *p* = .057. For when your work looks like comparing conditions.
-- **college-success** — one outcome, five predictors, four of them "not
-  significant". For when your work looks like regression.
+Both are ready to analyse, and both come with the frequentist results written
+out, so you start at step 2 of the guide.
 
-Both are cleaned and ready, and both come with the frequentist analysis
-already written out, so you start at step 2 of the guide rather than step 1.
+### Sensitive data
 
-### A note on sensitive data
-
-Keep it on your own machine. You will not need to upload anything anywhere, and
-we will not ask you to share your data with us or with the room.
+Keep it on your own machine. Nothing needs to be uploaded anywhere, and we will
+not ask you to share your data with us or with the room.
 
 ---
 
 ## Guide
 
-Keep [`guide.md`](guide.md) open in a window as you work. It walks you through
-the re-analysis in seven steps and gives you something to talk from in the
-closing round. Nothing in it has to be filled in.
+Keep [`guide.md`](guide.md) open as you work. It sets out the re-analysis in
+seven steps and gives you something to speak from at the end. Nothing in it
+needs to be filled in.
 
 ---
 
-## What we will ask you at the end
+## What we will ask at the end
 
-Not a presentation — two or three minutes, informally:
+Two or three minutes each, informally:
 
 1. What did you analyse, and what did the frequentist analysis say?
 2. What did the Bayesian analysis say?
-3. **Did anything change?** Did the two agree? Did the Bayesian version tell
-   you something the *p*-value could not — evidence *for* a null, say, or how
-   uncertain an estimate really was?
-4. What was annoying or confusing?
+3. Did anything change? Did the Bayesian version tell you something the
+   *p*-value could not — evidence for a null, say, or how uncertain an estimate
+   really was?
+4. What was confusing or awkward?
 
-Question 4 is the one we actually want. The friction you hit is the most useful
-thing you can tell us.
+The fourth question is the one we most want answered.

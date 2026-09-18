@@ -1,11 +1,10 @@
-# College Success — a regression you already ran
+# College success
 
-Treat this as a study you ran a few years ago. The data are clean and ready.
-The frequentist analysis is written out below, results and all, so you start
-where everyone else in the room starts: **with a result you already have, and a
-conclusion you already drew.**
+Treat this as a study you ran a few years ago. The data are clean and ready,
+and the frequentist analysis is written out below, so you start from a result
+you already have and a conclusion you already drew.
 
-Your job is [the guide](../../guide.md), from step 2 onwards.
+Work through [the guide](../../guide.md) from step 2 onwards.
 
 [← back to the provided datasets](../README.md)
 
@@ -13,13 +12,11 @@ Your job is [the guide](../../guide.md), from step 2 onwards.
 
 ## The study
 
-224 university students. For each one you have their **grade point average
-after three semesters** of university, and five things you knew about them
-*before* they arrived: their average high-school grades in three subjects, and
-their two SAT scores.
+224 university students. For each one you have their grade point average after
+three semesters, and five things known about them before they arrived: average
+high-school grades in three subjects, and two SAT scores.
 
-The question is the obvious one an admissions office would ask. **Which of
-these actually predicts how well someone does at university?**
+The question is which of these predicts how well someone does at university.
 
 ---
 
@@ -30,23 +27,23 @@ these actually predicts how well someone does at university?**
 | Variable | Meaning | Mean (SD) |
 |---|---|---|
 | `id` | Student | |
-| `gpa` | **Grade point average after three semesters.** The outcome | 2.64 (0.78) |
+| `gpa` | Grade point average after three semesters. The outcome | 2.64 (0.78) |
 | `hsm` | Average high-school grade in mathematics | 8.32 (1.64) |
 | `hss` | Average high-school grade in science | 8.09 (1.70) |
 | `hse` | Average high-school grade in English | 8.09 (1.51) |
 | `satm` | SAT score, mathematics | 595 (86) |
 | `satv` | SAT score, verbal | 505 (93) |
 
-The five predictors are all correlated with each other, some quite strongly
-(`hss` with `hse`, *r* = .58). Worth remembering when you start asking which
-of them matters.
+The five predictors are all correlated with one another, in places quite
+strongly (`hss` with `hse`, *r* = .58). This is worth keeping in mind when
+asking which of them matters.
 
-> The source file also carries a `sex` variable, but does not document what its
-> two codes mean, so it is left out rather than shipped as a guess.
+> The source file also contains a `sex` variable, but does not document what
+> its two codes mean, so it has been left out rather than included as a guess.
 
 ---
 
-## The frequentist analysis — what you found last time
+## The frequentist analysis
 
 ### Step 1 · high-school grades
 
@@ -56,35 +53,35 @@ Predicting `gpa` from `hsm`, `hss` and `hse`:
 
 | Predictor | *b* | SE | *t* | *p* |
 |---|---|---|---|---|
-| `hsm` | 0.169 | 0.036 | 4.75 | **< .001** |
+| `hsm` | 0.169 | 0.036 | 4.75 | < .001 |
 | `hss` | 0.034 | 0.038 | 0.91 | .362 |
 | `hse` | 0.045 | 0.039 | 1.17 | .245 |
 
-The model works, but only the maths grade carries it.
+The model is significant, but only the mathematics grade contributes.
 
 ### Step 2 · adding the SAT scores
 
-Adding `satm` and `satv` on top:
+Adding `satm` and `satv`:
 
 > Δ*R*² = .007, *F*(2, 218) = 0.95, *p* = .388
 
 | Predictor | *b* | SE | *t* | *p* |
 |---|---|---|---|---|
-| `hsm` | 0.146 | 0.039 | 3.72 | **< .001** |
+| `hsm` | 0.146 | 0.039 | 3.72 | < .001 |
 | `hss` | 0.036 | 0.038 | 0.95 | .343 |
 | `hse` | 0.055 | 0.040 | 1.40 | .164 |
 | `satm` | 0.00094 | 0.00069 | 1.38 | .170 |
 | `satv` | −0.00041 | 0.00059 | −0.69 | .492 |
 
-Nothing new reaches significance.
+Neither SAT score reaches significance.
 
-### Simple correlations with `gpa`
+### Correlations with `gpa`
 
 `hsm` *r* = .44 (*p* < .001) · `hss` *r* = .33 (*p* < .001) ·
 `hse` *r* = .29 (*p* < .001) · `satm` *r* = .25 (*p* < .001) ·
 `satv` *r* = .11 (*p* = .087)
 
-### What you concluded
+### The conclusion drawn
 
 > High-school grades predicted university GPA, *R*² = .21, *F*(3, 220) = 18.86,
 > *p* < .001. Of the three, only mathematics was a significant predictor,
@@ -94,64 +91,60 @@ Nothing new reaches significance.
 > mathematics performance is the key predictor of university success and that
 > SAT scores add nothing beyond it.
 
-Look at how many predictors that paragraph disposes of with the single word
-"not". Four of them, all treated identically. That is the thing to go after.
+That paragraph disposes of four predictors with the word "not", and treats all
+four identically.
 
 ---
 
-## Now redo it
+## What to try
 
-**Pick one of the four below and take it through [the guide](../../guide.md).**
-They are independent, and there is not time for all four. If you finish early,
-come back for a second.
+Take **one** of the four below through [the guide](../../guide.md). They are
+independent of each other, and there is not time for all four. If you finish
+early, come back for a second. If you do only one, do the first.
 
-If you only do one, do the first.
+### 1 · Are the four non-significant predictors alike?
 
----
+Run the Bayesian linear regression with all five predictors and read the
+inclusion Bayes factor for each.
 
-### 1 · Are the four non-significant predictors really the same?
-
-Run the Bayesian linear regression with all five predictors and look at the
-**inclusion Bayes factor** for each.
-
-`hss`, `hse`, `satm` and `satv` were all "not significant" and your write-up
-treated them as one undifferentiated lump. Ask the Bayesian analysis to rank
-them. Is the evidence against including each one the same? Is it the same
-*kind* of statement as "*p* = .49"?
+`hss`, `hse`, `satm` and `satv` were all non-significant and the write-up
+treated them as one group. Rank them by the Bayesian analysis instead. Is the
+evidence against including each the same, and is it the same kind of statement
+as *p* = .49?
 
 For at least one of them you will be able to say something you could not say
-before. For at least one other you will have to admit you still do not know.
+before. For at least one other you will have to concede that you still do not
+know.
 
 ### 2 · Do the SAT scores earn their place?
 
-Compare a model with just `hsm` against `hsm` plus both SAT scores.
+Compare a model containing only `hsm` against `hsm` plus both SAT scores.
 
-*p* = .388 let you say the SAT scores failed to improve the model. It did not
-let you say they are useless. Quantify the difference — and then decide whether
-an admissions office should keep paying for the test.
+A *p* of .388 licenses the claim that the SAT scores failed to improve the
+model. It does not license the claim that they are uninformative. Quantify the
+difference.
 
-### 3 · Which model is "the" model?
+### 3 · Which model should be reported?
 
-The regression output ranks all 32 combinations of the five predictors. Look at
-the posterior probability of the best one.
+The Bayesian regression ranks all 32 combinations of the five predictors. Look
+at the posterior probability of the best one.
 
-It is lower than you expect. What should you report when no single model is
-convincingly the right one — and what is model averaging for?
+It is lower than you would expect. What should be reported when no single model
+is convincingly correct, and what is model averaging for?
 
-### 4 · Does the answer depend on the prior?
+### 4 · Does the conclusion depend on the prior?
 
 Change the prior scale in the Bayesian regression options and re-run.
 
-Which conclusions move, and which stay put? A result that survives this is
-worth more than one that does not, and knowing which is which is the point of
-doing it.
+Which conclusions move and which stay put? A result that survives this is worth
+more than one that does not.
 
 ---
 
 ## Source
 
 This is the **College Success** dataset from the JASP Data Library
-(*Regression* → *College Success*), unchanged apart from dropping the
+(*Regression* → *College Success*), unchanged apart from the removal of the
 undocumented `sex` column.
 
 > Moore, D. S., McCabe, G. P., & Craig, B. A. (2012). *Introduction to the

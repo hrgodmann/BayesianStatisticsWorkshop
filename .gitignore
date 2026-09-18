@@ -30,6 +30,7 @@ Rplots.pdf
 # --- Instructor-only, never published ----------------------------------
 instructor-notes.R
 prepare-data.R
+analysis-brms.R
 
 # --- OS / editor -------------------------------------------------------
 .DS_Store
