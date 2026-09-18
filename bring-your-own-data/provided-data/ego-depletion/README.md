@@ -6,7 +6,7 @@ you already have and a conclusion you already drew.
 
 Work through [the guide](../../guide.md) from step 2 onwards.
 
-[← back to the provided datasets](../README.md)
+[← back to the session page](../../README.md)
 
 ---
 
