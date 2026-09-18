@@ -34,14 +34,22 @@ does "an effect" mean, and how large would you expect it to be?
 
 ---
 
-## 3 · Choose a prior
+## 3 · Think the prior through
 
 A default prior and an informed prior are both defensible. What matters is
-being able to say afterwards which you used.
+being able to say afterwards which you used, and why.
 
 If you take the default, read from the JASP output what that default actually
 is; you will need it for a write-up. If you set an informed prior, be ready to
 say what it rests on: a previous study, a meta-analysis, or theory.
+
+Here this is mostly reasoning rather than doing. Ask which effect sizes your
+prior treats as plausible, and whether you would defend that range out loud.
+Checking it properly means simulating from the prior and asking whether the
+result looks like data from your field — a prior predictive check, which JASP
+does not really let you do. That is `brms` territory, and the day-2 session
+covers it. What you *can* do here is step 5: vary the prior and watch what
+happens to the conclusion.
 
 ---
 
@@ -59,9 +67,9 @@ the same menu.
 | Linear regression | Bayesian Linear Regression |
 | χ² test of independence | Bayesian Contingency Tables |
 | Test of two proportions | Bayesian A/B Test |
-| Mixed model | `brms` in R — ask one of us |
+| Mixed model | `brms` in R |
 
-Record the Bayes factor, the posterior median, the 95% credible interval, and
+Where applicable, record the Bayes factor, the posterior median, the 95% credible interval, and
 whether convergence looked healthy.
 
 ---
