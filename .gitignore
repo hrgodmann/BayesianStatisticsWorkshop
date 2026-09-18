@@ -27,6 +27,10 @@ Rplots.pdf
 *.knit.md
 *.utf8.md
 
+# --- Instructor-only, never published ----------------------------------
+instructor-notes.R
+prepare-data.R
+
 # --- OS / editor -------------------------------------------------------
 .DS_Store
 Thumbs.db

@@ -41,8 +41,6 @@ regression and multi-model inference — day 2 morning, applied.
 |---|---|
 | `README.md` | The study, the data, the frequentist results, and what to try |
 | a single `.csv` | The data. Ready to open — no recoding, filtering or merging |
-| `instructor-notes.R` | For us, not you. Feel free to look, but it spoils it |
-| `prepare-data.R` | *(ego-depletion only)* how the file was built from the original |
 
 Neither needs anything installed beyond JASP. Only one option in the
 ego-depletion folder uses R.

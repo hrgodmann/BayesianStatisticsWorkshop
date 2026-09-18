@@ -158,9 +158,20 @@ earlier on this page. Does letting labs differ change the picture?
 
 ## Source
 
-Data are from the public OSF repository at <https://osf.io/jymhe/>, prepared by
-`prepare-data.R` in this folder — that script documents every change made to
-the original files and nothing else was done to them.
+Data are from the public OSF repository at <https://osf.io/jymhe/>. So you know
+exactly what you are holding, this is everything that was done to the original
+files:
+
+- the paper's own exclusion rule was applied, leaving the 2141 participants it
+  reports;
+- the four post-task ratings were taken from each lab's own data file, because
+  the pooled file on OSF kept them for only 9 of the 23 labs;
+- one lab recorded missing ratings as `25` on a 1–7 scale, so those were set to
+  missing;
+- columns were renamed, and `age` was dropped because only 15 labs recorded it.
+
+No values were altered, and no participants were removed beyond the paper's own
+exclusions.
 
 > Hagger, M. S., Chatzisarantis, N. L. D., Alberts, H., Anggono, C. O.,
 > Batailler, C., Birt, A. R., … Zwienenberg, M. (2016). A multilab
